@@ -20,3 +20,7 @@ Tiks veidota videospēle "Šausmenīte"
 - [ ] Pievienot iespēju izmantot šo priekšmetu ( lauzni ) ar kuru varēs uzlauzt aizvērtas/barikādētas durvis
 - [ ] Pievienot kartē jaunu priekšmetu atslēgu kuru varēs pacelt
 - [ ] Pievienot iespēju izmantot šo priekšmetu ( atslēgu ) ar kuru varēs atvērt aizslēgtas durvis, bet ne barikādētas
+
+Karte priekš Sausmenītes
+
+https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly-dungeon-143535
