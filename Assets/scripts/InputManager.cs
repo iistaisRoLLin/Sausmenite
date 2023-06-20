@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
 {
 
     private PlayerMovement playerMovement;
-    private PlayerMovement.OnFootActions onFoot;
+    public PlayerMovement.OnFootActions onFoot;
 
     private PlayerMotor motor;
     private PlayerCamera look;
