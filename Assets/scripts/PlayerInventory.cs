@@ -7,13 +7,15 @@ public class PlayerInventory : MonoBehaviour
 {
     [Header("General")]
     public List<itemType> inventoryList;
-    public int selectedItem = 0;
     public float playerReach;
-
-
-    [Space(20)]
-    [Header("Keys")]
+    [SerializeField] Camera cam;
+    [SerializeField] GameObject pickUpItem_gameobject;
+    [SerializeField] Image[] inventorySlotImage = new Image[4];
+    [SerializeField] Image[] inventoryBackgroundImage = new Image[4];
+    [SerializeField] Sprite emptySlotSprite;
     [SerializeField] KeyCode pickItemKey;
+
+    public int selectedItem = 0;
 
 
     [Space(20)]
@@ -27,15 +29,6 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] GameObject crowbar_prefab;
     [SerializeField] GameObject key_prefab;
     [SerializeField] GameObject flashlight_prefab;
-
-    [Space(20)]
-    [Header("UI")]
-    [SerializeField] Image[] inventorySlotImage = new Image[4];
-    [SerializeField] Image[] inventoryBackgroundImage = new Image[4];
-    [SerializeField] Sprite emptySlotSprite;
-
-    [SerializeField] Camera cam;
-    [SerializeField] GameObject pickUpItem_gameobject;
 
     private Dictionary<itemType, GameObject> itemSetActive = new Dictionary<itemType, GameObject>() { };
 
@@ -77,7 +70,7 @@ public class PlayerInventory : MonoBehaviour
 
         //UI
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
         {
             if(i < inventoryList.Count)
             {

@@ -7,12 +7,12 @@ public class PlayerMotor : MonoBehaviour
 
     private CharacterController controller;
     private Vector3 Velocity;
-    public float speed = 5f;
-    public float sprintSpeed = 7.5f;
+    public float speed = 3.5f;
+    public float sprintSpeed = 5f;
     private bool isGrounded;
     private bool sprinting;
     public float gravity = -9.81f;
-    public float jumpHeight = 1f;
+    public float jumpHeight = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +56,7 @@ public class PlayerMotor : MonoBehaviour
         }
         else
         {
-            speed = 5f;
+            speed = 3.5f;
         }
     }
 }
